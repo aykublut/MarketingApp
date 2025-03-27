@@ -50,50 +50,54 @@ function clearAll() {
 function exe(e) {
     const tiklananArac = e.target.id;
     //elma
-    if (tiklananArac === "elmaAzalt" && elmaAdet > 0) {
-        const icerik = "elma";
-        elmaAdet = elmaAdet - 1;
-        let elmaTutar = elmaAdet * elmaFiyat;
-        gonder(icerik, elmaAdet, elmaTutar);
-        elmasayac.textContent = elmaAdet;
+    if ((elmaAdet + gofretAdet + unAdet) < 77) {
+        if (tiklananArac === "elmaAzalt" && elmaAdet > 0) {
+            const icerik = "elma";
+            elmaAdet = elmaAdet - 1;
+            let elmaTutar = elmaAdet * elmaFiyat;
+            gonder(icerik, elmaAdet, elmaTutar);
+            elmasayac.textContent = elmaAdet;
+        }
+        if (tiklananArac === "elmaEkle") {
+            const icerik = "elma";
+            elmaAdet = elmaAdet + 1;
+            let elmaTutar = elmaAdet * elmaFiyat;
+            gonder(icerik, elmaAdet, elmaTutar);
+            elmasayac.textContent = elmaAdet;
+        }
+        //gofret
+        if (tiklananArac === "gofretAzalt" && gofretAdet > 0) {
+            const icerik = "gofret";
+            gofretAdet = gofretAdet - 1;
+            let gofretTutar = gofretAdet * gofretFiyat;
+            gonder(icerik, gofretAdet, gofretTutar);
+            gofretsayac.textContent = gofretAdet;
+        }
+        if (tiklananArac === "gofretEkle") {
+            const icerik = "gofret";
+            gofretAdet = gofretAdet + 1;
+            let gofretTutar = gofretAdet * gofretFiyat;
+            gonder(icerik, gofretAdet, gofretTutar);
+            gofretsayac.textContent = gofretAdet;
+        }
+        //un
+        if (tiklananArac === "unAzalt" && unAdet > 0) {
+            const icerik = "un";
+            unAdet = unAdet - 1;
+            let unTutar = unAdet * unFiyat;
+            gonder(icerik, unAdet, unTutar);
+            unsayac.textContent = unAdet;
+        }
+        if (tiklananArac === "unEkle") {
+            const icerik = "un";
+            unAdet = unAdet + 1;
+            let unTutar = unAdet * unFiyat;
+            gonder(icerik, unAdet, unTutar);
+            unsayac.textContent = unAdet;
+        }
+
     }
-    if (tiklananArac === "elmaEkle") {
-        const icerik = "elma";
-        elmaAdet = elmaAdet + 1;
-        let elmaTutar = elmaAdet * elmaFiyat;
-        gonder(icerik, elmaAdet, elmaTutar);
-        elmasayac.textContent = elmaAdet;
-    }
-    //gofret
-    if (tiklananArac === "gofretAzalt" && gofretAdet > 0) {
-        const icerik = "gofret";
-        gofretAdet = gofretAdet - 1;
-        let gofretTutar = gofretAdet * gofretFiyat;
-        gonder(icerik, gofretAdet, gofretTutar);
-        gofretsayac.textContent = gofretAdet;
-    }
-    if (tiklananArac === "gofretEkle") {
-        const icerik = "gofret";
-        gofretAdet = gofretAdet + 1;
-        let gofretTutar = gofretAdet * gofretFiyat;
-        gonder(icerik, gofretAdet, gofretTutar);
-        gofretsayac.textContent = gofretAdet;
-    }
-    //un
-    if (tiklananArac === "unAzalt" && unAdet > 0) {
-        const icerik = "un";
-        unAdet = unAdet - 1;
-        let unTutar = unAdet * unFiyat;
-        gonder(icerik, unAdet, unTutar);
-        unsayac.textContent = unAdet;
-    }
-    if (tiklananArac === "unEkle") {
-        const icerik = "un";
-        unAdet = unAdet + 1;
-        let unTutar = unAdet * unFiyat;
-        gonder(icerik, unAdet, unTutar);
-        unsayac.textContent = unAdet;
-    }
+
 }
 
 function gonder(icerik, adet, tutar) {
