@@ -1,0 +1,167 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: rgb(247, 234, 220);
+}
+
+h3 {
+    margin: 0;
+}
+
+.h3div {
+    width: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-top {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+}
+
+.gorselAlani-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.alisverisListesi {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 350px;
+    max-height: 400px;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.kapsayici {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.alisverisButton {
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(102, 101, 101);
+    color: white;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.alisverisButton:hover {
+    background-color: rgb(156, 156, 156);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    color: rgb(102, 101, 101);
+}
+
+.islemWrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.odemeMerkezi {
+    background-color: rgb(102, 101, 101);
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+
+}
+
+.gorselAlani {
+    background-color: rgb(255, 255, 255);
+    height: 180px;
+    width: 230px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
+
+.tutarAlani {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    margin-right: 10px;
+    height: 180px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
+
+.tutarAlani {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+#toplamTutarKapsayici {
+    width: 265px;
+    background-color: rgb(102, 101, 101);
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 50px;
+    padding: 0px 40px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    background-color: rgb(80, 16, 16);
+    color:
+        white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#clear:hover {
+    background-color: brown;
+
+}
+
+.sonDiv {
+    display: flex;
+    gap: 5px;
+}

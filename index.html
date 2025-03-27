@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alişveris Uygulamasi</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="alisverisListesi">
+            <div class="elmaReonu kapsayici">
+                <img src="./images/elma.png" alt="elmapng" class="img-top">
+                <div class="islemWrapper"><button id="elmaAzalt" class="alisverisButton">-</button>
+                    <div class="h3div">
+                        <h3 id="elmasayac">_</h3>
+                    </div><button id="elmaEkle" class="alisverisButton">+</button>
+                </div>
+            </div>
+            <div class="gofretReonu kapsayici">
+                <img src="./images/gofret.png" alt="gofretpng" class="img-top">
+                <div class="islemWrapper"><button id="gofretAzalt" class="alisverisButton">-</button>
+                    <div class="h3div">
+                        <h3 id="gofretsayac">_</h3>
+                    </div><button id="gofretEkle" class="alisverisButton">+</button>
+                </div>
+            </div>
+            <div class="unReonu kapsayici">
+                <img src="./images/un.png" alt="unpng" class="img-top">
+                <div class="islemWrapper"><button id="unAzalt" class="alisverisButton">-</button>
+                    <div class="h3div">
+                        <h3 id="unsayac">_</h3>
+                    </div><button id="unEkle" class="alisverisButton">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="odemeMerkezi">
+            <div class="gorselAlani">
+
+            </div>
+            <div class="tutarAlani">
+                <h4>Elma: 4₺</h4>
+                <h4 id="adetElma">Adet</h4>
+                <h4>Gofret: 5₺</h4>
+                <h4 id="adetGofret">Adet</h4>
+                <h4>Un: 60₺</h4>
+                <h4 id="adetUn">Adet</h4>
+            </div>
+        </div>
+        <div class="sonDiv">
+            <button id="clear" class="">
+                Temizle</button>
+            <div id="toplamTutarKapsayici"></div>
+
+        </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
